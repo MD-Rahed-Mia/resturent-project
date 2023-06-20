@@ -1,0 +1,511 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+}
+
+/* nav menu starts from here */
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 10%;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-menu .logo {
+  font-size: 2rem;
+  color: orangered;
+  font-weight: 900;
+}
+
+.nav-menu .logo span {
+  font-size: 4rem;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.nav-menu ul li a {
+  color: white;
+}
+
+.nav-menu ul li a:hover {
+  color: orangered;
+  letter-spacing: 3px;
+}
+
+/* banner section starts from here */
+
+#banner-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(bg.jpg);
+}
+
+.banner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.banner-box h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.banner-box p {
+  padding: 0px 20%;
+  text-align: center;
+  color: white;
+}
+
+.banner-box a {
+  margin-top: 3rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: orangered;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-transform: capitalize;
+  transition: 1s;
+}
+
+.banner-box a:hover {
+  letter-spacing: 6px;
+}
+
+/* about me section starts from here */
+
+#about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.about-me-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4%;
+}
+
+.title-text {
+  color: #111;
+  font-weight: 300;
+  text-align: center;
+}
+
+.title-text span {
+  color: orangered;
+  font-weight: 700;
+}
+
+.about-me-title p {
+  font-size: 0.8rem;
+}
+
+.about-me-title a {
+  color: orangered;
+}
+
+.about-me-img {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+}
+
+.title-img {
+  width: 100%;
+  height: fit-content;
+}
+
+/* menu start from here */
+
+#menu {
+  margin-top: 50px;
+  display: flex;
+  color: #111;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+#menu p {
+  font-size: 0.7rem;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  padding: 5%;
+  grid-gap: 2%;
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6%;
+  background-color: rgb(212, 212, 212);
+}
+
+.menu-box div p {
+  font-size: 0.5rem;
+}
+
+.menu-img {
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.order-btn {
+  padding: 5px 10px;
+  background-color: orangered;
+  color: white;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+}
+
+.order-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.view-all-btn {
+  padding: 5px 10px;
+  color: white;
+  background-color: orangered;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  margin-bottom: 50px;
+}
+
+#expert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.exper-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+#expert p {
+  font-size: 0.8rem;
+}
+
+.expert-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expert-box img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.expert-box h2 {
+  font-family: var(--font-family);
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.expert-box p {
+  text-align: center;
+  padding: 5px 10%;
+  font-size: 0.8rem;
+}
+
+/* testimonials starts from here */
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 4%;
+}
+
+.menu-title p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.testimonials-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-top: 20px;
+}
+
+.testimonials-box {
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-box img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.testimonials-box p {
+  font-size: 0.8rem;
+  color: #111;
+  text-align: center;
+}
+
+.testimonials-box p span {
+  color: orangered;
+  font-size: 0.9rem;
+}
+
+/* contact starts from here */
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact-form {
+  padding: 50px 5%;
+  width: 50%;
+}
+
+.contact-form form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contact-form input,
+textarea {
+  width: 70%;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.contact-form form button {
+  padding: 5px;
+  min-width: 100px;
+  background-color: orangered;
+  color: white;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.contact-form form textarea {
+  max-height: 100px;
+  max-width: 70%;
+  resize: none;
+}
+
+/* contact info stars from here */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  padding: 5px 5%;
+  height: 100%;
+}
+
+.info label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.social-media {
+  margin-top: 50px;
+}
+
+.social-icon ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.social-icon ul li a img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* footer starts from here */ 
+
+#footer{
+  width: 100%;
+  text-align: center;
+  background-color: #111;
+  color: white;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+
+@media screen and (max-width: 450px) {
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  #banner-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-box{
+    width: 100%;
+    text-align: center;
+  }
+
+  #about-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-box{
+    margin-top: 30px;
+  }
+
+  .exper-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .expert-box{
+    width: 80%;
+  }
+
+  .testimonials-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonials-box{
+    width: 70%;
+  }
+
+  #contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-form, .contact-info{
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-form input {
+    width: 70%;
+  }
+
+}
